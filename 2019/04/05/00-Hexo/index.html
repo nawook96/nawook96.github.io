@@ -292,23 +292,22 @@
     <div class="card-content">
         <h3 class="title is-5 has-text-weight-normal">댓글</h3>
         
+<div id="comment-container"></div>
+<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 <script>
-    var disqus_config = function () {
-        this.page.url = 'http://nawook96.github.io/2019/04/05/00-Hexo/';
-        this.page.identifier = '2019/04/05/00-Hexo/';
-    };
-    (function() {
-        var d = document, s = d.createElement('script');  
-        s.src = '//' + 'wooksblog' + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-    })();
+	var gitment = new Gitment({
+		id: '2019/04/05/00-Hexo/',
+		owner: 'nawook96',
+		repo: 'nawook96.github.io',
+		oauth: {
+			client_id: '82a8a2dff983c06542d4',
+			client_secret: 'fea45e7788d7c374a23fcf19ceebd3d424a4f410',
+		},
+	})
+	gitment.render('comment-container')
 </script>
 
-<div id="disqus_thread">
-    
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
     </div>
 </div>
 </div>
