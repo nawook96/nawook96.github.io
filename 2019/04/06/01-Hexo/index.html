@@ -296,22 +296,14 @@
 <div class="card">
     <div class="card-content">
         <h3 class="title is-5 has-text-weight-normal">댓글</h3>
-        
-<div id="comment-container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-	var gitment = new Gitment({
-		id: '2019/04/06/01-Hexo/',
-		owner: 'nawook96',
-		repo: 'nawook96.github.io',
-		oauth: {
-			client_id: '82a8a2dff983c06542d4',
-			client_secret: 'fea45e7788d7c374a23fcf19ceebd3d424a4f410',
-		},
-	})
-	gitment.render('comment-container')
-</script>
+        <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/ko/sdk.js#xfbml=1&version=v2.8";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-comments" data-width="100%" data-href="http://nawook96.github.io/2019/04/06/01-Hexo/" data-num-posts="5"></div>
 
     </div>
 </div>
