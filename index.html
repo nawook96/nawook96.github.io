@@ -160,7 +160,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1분 read (About 210 words)
+                    1분 read (About 211 words)
                 </span>
                 
                 
@@ -178,17 +178,16 @@
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var i int</span><br><span class="line">var s string</span><br><span class="line"></span><br><span class="line">var age1 int = 10</span><br><span class="line">var name1 string = &quot;Shin&quot;</span><br></pre></td></tr></table></figure>
 <p>If you omit data-type, the variable is determined by data-type of value that you enter. However, if you omit the data-type, you must define the initial value.</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var age2 = 20</span><br><span class="line">var name2 = &quot;Kim&quot;</span><br><span class="line">var address // compiled error</span><br></pre></td></tr></table></figure>
-<h1 id="Short-declaration"><a href="#Short-declaration" class="headerlink" title="Short declaration"></a>Short declaration</h1><hr>
-<p><code>:=</code> allows you to simply declare and initialize variables without using <code>var</code> and <code>type</code> keywords.</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">age3 := 30</span><br><span class="line">name3 := &quot;Park&quot;</span><br></pre></td></tr></table></figure>
-<h1 id="Multple-declaration"><a href="#Multple-declaration" class="headerlink" title="Multple declaration"></a>Multple declaration</h1><hr>
-<p>you can declare multiple variables separated by <code>,</code>(comma). Then, values are subsituted in the order in which variables are declared and must be equal to number of variables.<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var x1, y1 int = 30, 50       // x = 30, y = 50</span><br><span class="line">var age4, name4 = 40, &quot;Choi&quot; // age = 10, name = &quot;Choi&quot;</span><br><span class="line">a, b, c, d := 1, 3.4, &quot;Hello, world!&quot;, false // a = 1, b = 3.4, c = &quot;Hello, world!&quot;, d = false.</span><br></pre></td></tr></table></figure></p>
-<p>You can enter values for multiple variables even after a variable is declared. In <strong>Golang</strong>, this feature is called <code>Parallel assignment</code>.</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var x3, y3 int</span><br><span class="line">var age6 int</span><br><span class="line"></span><br><span class="line">x4, y4, age = 10, 20, 5  // x = 10, y = 20, age = 5: Parallel assignment</span><br></pre></td></tr></table></figure>
-<p><code>var</code> keyword and <code>()</code> allow you to declare and initialize multiple variables.</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var (</span><br><span class="line">	x2, y2      int = 30, 50      // x and y : int.</span><br><span class="line">	age5, name5     = 10, &quot;Maria&quot; // age : int, name : string</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/04/08/03-Variable/#more">자세히 보기</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -217,7 +216,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    몇 초 read (About 102 words)
+                    몇 초 read (About 103 words)
                 </span>
                 
                 
@@ -233,17 +232,16 @@
             <h1 id="Curly-bracket"><a href="#Curly-bracket" class="headerlink" title="Curly bracket({})"></a>Curly bracket({})</h1><hr>
 <p>You must start a square bracket on the same line when you start a function, condition statement, or loop statement, such as:</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">func main() &#123;</span><br><span class="line">	i := 10</span><br><span class="line">	if i &gt; 5 &#123;</span><br><span class="line">		fmt.Println(&quot;above 5&quot;)</span><br><span class="line">	&#125;</span><br><span class="line">	for i := 0; i &lt; 5; i++ &#123;</span><br><span class="line">		fmt.Println(i)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h1 id="Semicolon"><a href="#Semicolon" class="headerlink" title="Semicolon"></a>Semicolon</h1><hr>
-<p>Unlike C,C++, you usually omit semicolon at the end of the phrase in <strong>Golang</strong>.</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fmt.Println(&quot;Hello, world!&quot;)</span><br></pre></td></tr></table></figure>
-<p>If you want to use multiple phrases per line, you can separate them with semicolons.</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fmt.Println(&quot;Hello,&quot;);fmt.Println(&quot;world!&quot;)</span><br></pre></td></tr></table></figure>
-<h1 id="Comment-out"><a href="#Comment-out" class="headerlink" title="Comment out"></a>Comment out</h1><hr>
-<p>The Comment out has two type, one line and range.</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// fmt.Println(&quot;Hello, world!&quot;)</span><br></pre></td></tr></table></figure>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">fmt.Println(&quot;Hello,&quot;)</span><br><span class="line">fmt.Println(&quot;world!&quot;)</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/04/08/02-Basic-Syntax/#more">자세히 보기</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -272,7 +270,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    1분 read (About 117 words)
+                    1분 read (About 118 words)
                 </span>
                 
                 
@@ -288,14 +286,16 @@
             <h1 id="How-to-build"><a href="#How-to-build" class="headerlink" title="How to build"></a>How to build</h1><p>Make <strong>hello.go</strong> file like /GOPATH/src/hello.go</p>
 <figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import &quot;fmt&quot;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">    fmt.Println(&quot;Hello, world!&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>Execute the following command in terminal<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">go build hello.go</span><br><span class="line">go run hello.go</span><br></pre></td></tr></table></figure></p>
-<p><strong>Golang</strong> consists of all parts of the package. Therefore, package setting is placed on the top of source codes. Also, the main package is the first to run.</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br></pre></td></tr></table></figure>
-<p><strong>import</strong> is a keyword that uses packages. We use <code>fmt</code> package to print strings.</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &quot;fmt&quot;</span><br></pre></td></tr></table></figure>
-<p><strong>Like</strong> C, C++, Java, and C#, start with the main function. And using the Println function of the fmt package, Outputs a string “Hello, world!”.</p>
-<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">func main() &#123;</span><br><span class="line">    fmt.Println(&quot;Hello, world!&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/04/08/01-Build/#more">자세히 보기</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
@@ -324,7 +324,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    2분 read (About 246 words)
+                    2분 read (About 247 words)
                 </span>
                 
                 
@@ -353,38 +353,16 @@
 <li>Support multi-core environment</li>
 <li>Fast compile</li>
 </ul>
-<h1 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h1><hr>
-<p>will be update..</p>
-<h3 id="1-basics"><a href="#1-basics" class="headerlink" title="1. basics"></a>1. basics</h3><ul>
-<li><a href="https://github.com/nawook96/go-tutorial/tree/master/src/1_basics/1_Build" target="_blank" rel="noopener">How to build</a></li>
-<li><a href="https://github.com/nawook96/go-tutorial/tree/master/src/1_basics/2_Basic_Syntax" target="_blank" rel="noopener">Basic Syntax</a></li>
-<li><a href="https://github.com/nawook96/go-tutorial/tree/master/src/1_basics/3_Variable" target="_blank" rel="noopener">Variable</a></li>
-</ul>
-<h3 id="2-advanced"><a href="#2-advanced" class="headerlink" title="2. advanced"></a>2. advanced</h3><ul>
-<li><h1 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h1></li>
-</ul>
-<hr>
-<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ wget https://storage.googleapis.com/golang/go&lt;version&gt;.linux-&lt;architecture&gt;.tar.gz</span><br><span class="line">$ tar vxzf go&lt;version&gt;.linux-&lt;architecture&gt;.tar.gz</span><br><span class="line">$ sudo mv go /usr/<span class="hljs-built_in">local</span>/</span><br></pre></td></tr></table></figure>
-<p>And set environment variable<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="hljs-built_in">echo</span> <span class="hljs-string">"export PATH=<span class="hljs-variable">$PATH</span>:/usr/local/go/bin"</span> &gt;&gt; .bashrc</span><br><span class="line">$ sourch .bashrc</span><br></pre></td></tr></table></figure></p>
-<h2 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install golang</span><br></pre></td></tr></table></figure>
-<h2 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo yum install golang</span><br></pre></td></tr></table></figure>
-<h2 id="Mac-OS-X"><a href="#Mac-OS-X" class="headerlink" title="Mac OS X"></a>Mac OS X</h2><p>You can download pkg file in <a href="http://golang.org/dl" target="_blank" rel="noopener">here</a>.</p>
-<h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><p>You can download install file in <a href="http://golang.org/dl" target="_blank" rel="noopener">here</a>.</p>
-<p>And you set environment variable. (ex: PATH=C:\Go\bin, GOPATH=C:\myGo)<br>And make pkg,bin,src folder.</p>
-<h1 id="Version"><a href="#Version" class="headerlink" title="Version"></a>Version</h1><hr>
-<ul>
-<li>Go 1.12.1</li>
-</ul>
-<h1 id="Author"><a href="#Author" class="headerlink" title="Author"></a>Author</h1><hr>
-<ul>
-<li>Dongwook, Shin <a href="https://github.com/nawook96" target="_blank" rel="noopener">@nawook96</a></li>
-<li>Homepage : <a href="https://nawook96.github.io">https://nawook96.github.io</a></li>
-</ul>
-<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><hr>
-<p><a href="http://pyrasis.com/go.html" target="_blank" rel="noopener">http://pyrasis.com/go.html</a></p>
-
         </div>
         
+        
+        <div class="level is-mobile">
+            <div class="level-start">
+                <div class="level-item">
+                <a class="button is-size-7 is-light" href="/2019/04/08/00-init/#more">자세히 보기</a>
+                </div>
+            </div>
+        </div>
         
         
     </div>
