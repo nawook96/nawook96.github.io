@@ -2,24 +2,24 @@
 <html lang="ko">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Hexo의 여러가지 사용법 - Wook&#39;s Programming Blog</title>
+<title>Go. Basic Syntax - Wook&#39;s Programming Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="👉 Intro Hexo에 대해서 알아봤으니 이제 사용법에 대해 천천히 알아봅시다.  Scaffolds Front-matter Tag Plugin Asset Folder">
-<meta name="keywords" content="hexo">
+    <meta name="description" content="Curly bracket({}) You must start a square bracket on the same line when you start a function, condition statement, or loop statement, such as: 123456789func main() &amp;#123;	i := 10	if i &amp;gt; 5 &amp;#123;		f">
+<meta name="keywords" content="go,tutorial,curly bracket,semicolon,comment out">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo의 여러가지 사용법">
-<meta property="og:url" content="http://nawook96.github.io/2019/04/06/01-Hexo/index.html">
+<meta property="og:title" content="Go. Basic Syntax">
+<meta property="og:url" content="http://nawook96.github.io/2019/04/08/02-Basic-Syntax/index.html">
 <meta property="og:site_name" content="Wook&#39;s Programming Blog">
-<meta property="og:description" content="👉 Intro Hexo에 대해서 알아봤으니 이제 사용법에 대해 천천히 알아봅시다.  Scaffolds Front-matter Tag Plugin Asset Folder">
+<meta property="og:description" content="Curly bracket({}) You must start a square bracket on the same line when you start a function, condition statement, or loop statement, such as: 123456789func main() &amp;#123;	i := 10	if i &amp;gt; 5 &amp;#123;		f">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="http://nawook96.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-04-06T14:06:02.832Z">
+<meta property="og:updated_time" content="2019-04-08T14:03:48.167Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo의 여러가지 사용법">
-<meta name="twitter:description" content="👉 Intro Hexo에 대해서 알아봤으니 이제 사용법에 대해 천천히 알아봅시다.  Scaffolds Front-matter Tag Plugin Asset Folder">
+<meta name="twitter:title" content="Go. Basic Syntax">
+<meta name="twitter:description" content="Curly bracket({}) You must start a square bracket on the same line when you start a function, condition statement, or loop statement, such as: 123456789func main() &amp;#123;	i := 10	if i &amp;gt; 5 &amp;#123;		f">
 <meta name="twitter:image" content="http://nawook96.github.io/images/og_image.png">
 
 
@@ -101,7 +101,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="Hexo의 여러가지 사용법" height="28">
+                <img src="/images/logo.png" alt="Go. Basic Syntax" height="28">
             
             </a>
         </div>
@@ -154,17 +154,17 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-05T16:58:06.000Z">2019-04-06</time>
+                <time class="level-item has-text-grey" datetime="2019-04-08T14:01:02.000Z">2019-04-08</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
+                <a class="has-link-grey -link" href="/categories/Go/">Go</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    4분 read (About 666 words)
+                    몇 초 read (About 102 words)
                 </span>
                 
                 
@@ -173,97 +173,29 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Hexo의 여러가지 사용법
+                Go. Basic Syntax
             
         </h1>
         <div class="content">
-            <h1 id="👉-Intro"><a href="#👉-Intro" class="headerlink" title="👉 Intro"></a>👉 Intro</h1><hr>
-<p>Hexo에 대해서 알아봤으니 이제 사용법에 대해 천천히 알아봅시다.</p>
-<ul>
-<li>Scaffolds</li>
-<li>Front-matter</li>
-<li>Tag Plugin</li>
-<li>Asset Folder</li>
-</ul>
-<a id="more"></a>
-<h1 id="👉-Scaffolds"><a href="#👉-Scaffolds" class="headerlink" title="👉 Scaffolds"></a>👉 Scaffolds</h1><hr>
-<ul>
-<li>스캐폴드는 ‘hexo new’를 통해 새로운 파일을 생성할 때 기본적으로 만들어지는 구조를 정의하는 파일 입니다.</li>
-</ul>
-<figure class="highlight plain hljs"><figcaption><span>/scaffolds/post.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo의 여러가지 사용법</span><br><span class="line">date: 1554483486000</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>기본적으로 이런 구조일 것 입니다. 여기서 tags에 파일 생성시 기본으로 달아줄 태그를 달아줄 수 있습니다.</p>
-</li>
-<li><p>뿐만 아니라 카테고리와 썸네일도 설정 할 수 있습니다.</p>
-</li>
-</ul>
-<h1 id="👉-Front-matter"><a href="#👉-Front-matter" class="headerlink" title="👉 Front-matter"></a>👉 Front-matter</h1><ul>
-<li><p>Front-matter는 새로운 파일 생성 시 가장 위에있는 블락입니다.</p>
-<figure class="highlight plain hljs"><figcaption><span>/source/_post/01-Hexo.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 01_Hexo의 여러가지 사용법</span><br><span class="line">date: 2019-04-06 01:58:06</span><br><span class="line">tags:</span><br><span class="line">    - hexo</span><br><span class="line">categories:</span><br><span class="line">    - Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>스캐폴드를 통해서 자주 사용하는 것들을 정의해두면 편리합니다.</p>
-</li>
-<li><p><strong>layout</strong> : 레이아웃</p>
-</li>
-<li><strong>title</strong> : 제목</li>
-<li><strong>date</strong> : 배포 날짜</li>
-<li><strong>updated</strong> : 수정 날짜</li>
-<li><strong>comments</strong> : 댓글 기능 여부(true/false)</li>
-<li><strong>tags</strong> : 태그</li>
-<li><strong>categories</strong> : 카테고리</li>
-<li><strong>permalink</strong> : 포스트의 URL</li>
-<li><strong>thumbnail</strong> : 썸네일</li>
-</ul>
-<h1 id="👉-Tag-Plugin"><a href="#👉-Tag-Plugin" class="headerlink" title="👉 Tag Plugin"></a>👉 Tag Plugin</h1><hr>
-<ul>
-<li><p>태그 플러그인은 Hexo에서 자체적으로 지원하는 문법으로, 마크다운 외에 포스팅을 하기 위한 문법입니다.</p>
-</li>
-<li><p>제가 자주 사용하는 것만 정리 해보자면,</p>
-</li>
-</ul>
-<h2 id="🔵-인용-구문"><a href="#🔵-인용-구문" class="headerlink" title="🔵 인용 구문"></a>🔵 인용 구문</h2><hr>
-<ul>
-<li>MD에서 제공하는 인용 구문보다 더 많은 정보를 추가 할 수 있습니다.</li>
-</ul>
-<p><strong>How to use</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>Example</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote 신동욱, https://github.com/nawook96 %&#125;</span><br><span class="line">배고프다</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>Result</strong><br><blockquote><p>배고프다</p>
-<footer><strong>신동욱,</strong><cite><a href="https://github.com/nawook96" target="_blank" rel="noopener">github.com/nawook96</a></cite></footer></blockquote></p>
-<h2 id="🔵-코드-삽입"><a href="#🔵-코드-삽입" class="headerlink" title="🔵 코드 삽입"></a>🔵 코드 삽입</h2><hr>
-<ul>
-<li>lang은 <a href="https://highlightjs.org" target="_blank" rel="noopener">https://highlightjs.org</a> 에서 지원하는 언어만 나옵니다.(highlight), 파일명 명시도 가능합니다.</li>
-</ul>
-<p><strong>How to use</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;</span><br><span class="line">code snippet</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>Example</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock lang:objc hi.h%&#125;</span><br><span class="line">[rectangle setX: 10 y: 10 width: 20 height: 20];</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>Result</strong><br><figure class="highlight objc hljs"><figcaption><span>hi.h</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[rectangle setX: <span class="hljs-number">10</span> y: <span class="hljs-number">10</span> width: <span class="hljs-number">20</span> height: <span class="hljs-number">20</span>];</span><br></pre></td></tr></table></figure></p>
-<h2 id="🔵-YOUTUBE-삽입"><a href="#🔵-YOUTUBE-삽입" class="headerlink" title="🔵 YOUTUBE 삽입"></a>🔵 YOUTUBE 삽입</h2><hr>
-<p><strong>How to use</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube video_id %&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>Example</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube Z0ti3pBKmes %&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>Result</strong><br><div class="video-container"><iframe src="//www.youtube.com/embed/Z0ti3pBKmes" frameborder="0" allowfullscreen></iframe></div></p>
-<h1 id="👉-Asset-Folder"><a href="#👉-Asset-Folder" class="headerlink" title="👉 Asset Folder"></a>👉 Asset Folder</h1><hr>
-<ul>
-<li><p>Asset Folder는 각 포스트에서 사용하는 여러가지 리소스를 저장하는 폴더입니다.</p>
-</li>
-<li><p>_config.yml 에서 다음과 같이 수정하여 설정 하면, 새로운 포스팅을 할 때마다 자동으로 폴더가 생성 됩니다.</p>
-</li>
-</ul>
-<figure class="highlight plain hljs"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure>
-<ul>
-<li>이제 생성된 파일에 있는 여러가지 리소스를 경로를 설정해 주지 않아도 다음과 같이 Tag Plugin을 통해 사용할 수 있습니다.</li>
-</ul>
-<p><strong>How to use</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path &lt;file-name&gt; %&#125;</span><br><span class="line">&#123;% asset_img &lt;file-name&gt; [title] %&#125;</span><br><span class="line">&#123;% asset_link &lt;url-name&gt; [title] %&#125;</span><br></pre></td></tr></table></figure></p>
-<h1 id="👉-Reference"><a href="#👉-Reference" class="headerlink" title="👉 Reference"></a>👉 Reference</h1><hr>
-<ul>
-<li>여기에서 많이 참고했습니다.<br>(<a href="https://futurecreator.github.io/2016/06/21/hexo-basic-usage/" target="_blank" rel="noopener">https://futurecreator.github.io/2016/06/21/hexo-basic-usage/</a>)</li>
-</ul>
-
+            <h1 id="Curly-bracket"><a href="#Curly-bracket" class="headerlink" title="Curly bracket({})"></a>Curly bracket({})</h1><hr>
+<p>You must start a square bracket on the same line when you start a function, condition statement, or loop statement, such as:</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">func main() &#123;</span><br><span class="line">	i := 10</span><br><span class="line">	if i &gt; 5 &#123;</span><br><span class="line">		fmt.Println(&quot;above 5&quot;)</span><br><span class="line">	&#125;</span><br><span class="line">	for i := 0; i &lt; 5; i++ &#123;</span><br><span class="line">		fmt.Println(i)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Semicolon"><a href="#Semicolon" class="headerlink" title="Semicolon"></a>Semicolon</h1><hr>
+<p>Unlike C,C++, you usually omit semicolon at the end of the phrase in <strong>Golang</strong>.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fmt.Println(&quot;Hello, world!&quot;)</span><br></pre></td></tr></table></figure>
+<p>If you want to use multiple phrases per line, you can separate them with semicolons.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fmt.Println(&quot;Hello,&quot;);fmt.Println(&quot;world!&quot;)</span><br></pre></td></tr></table></figure>
+<h1 id="Comment-out"><a href="#Comment-out" class="headerlink" title="Comment out"></a>Comment out</h1><hr>
+<p>The Comment out has two type, one line and range.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// fmt.Println(&quot;Hello, world!&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">fmt.Println(&quot;Hello,&quot;)</span><br><span class="line">fmt.Println(&quot;world!&quot;)</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
         </div>
         
         <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/hexo/">hexo</a>
+                    <a class="has-link-grey -link" href="/tags/comment-out/">comment out</a>, <a class="has-link-grey -link" href="/tags/curly-bracket/">curly bracket</a>, <a class="has-link-grey -link" href="/tags/go/">go</a>, <a class="has-link-grey -link" href="/tags/semicolon/">semicolon</a>, <a class="has-link-grey -link" href="/tags/tutorial/">tutorial</a>
                 </div>
             </div>
         </div>
@@ -281,16 +213,16 @@
     <div class="level post-navigation is-flex-wrap is-mobile">
         
         <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/04/08/00-init/">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/04/08/03-Variable/">
                 <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">Go. Go tutorial</span>
+                <span class="level-item">Go. Variable</span>
             </a>
         </div>
         
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/04/05/00-Hexo/">
-                <span class="level-item">Hexo 설치 및 사용법</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2019/04/08/01-Build/">
+                <span class="level-item">Go. How to build</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -310,7 +242,7 @@
     js.src = "//connect.facebook.net/ko/sdk.js#xfbml=1&version=v2.8";
     fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-comments" data-width="100%" data-href="http://nawook96.github.io/2019/04/06/01-Hexo/" data-num-posts="5"></div>
+<div class="fb-comments" data-width="100%" data-href="http://nawook96.github.io/2019/04/08/02-Basic-Syntax/" data-num-posts="5"></div>
 
     </div>
 </div>
@@ -504,41 +436,17 @@
                 카탈로그
             </h3>
             <ul class="menu-list"><li>
-        <a class="is-flex" href="#👉-Intro">
+        <a class="is-flex" href="#Curly-bracket">
         <span class="has-mr-6">1</span>
-        <span>👉 Intro</span>
+        <span>Curly bracket({})</span>
         </a></li><li>
-        <a class="is-flex" href="#👉-Scaffolds">
+        <a class="is-flex" href="#Semicolon">
         <span class="has-mr-6">2</span>
-        <span>👉 Scaffolds</span>
+        <span>Semicolon</span>
         </a></li><li>
-        <a class="is-flex" href="#👉-Front-matter">
+        <a class="is-flex" href="#Comment-out">
         <span class="has-mr-6">3</span>
-        <span>👉 Front-matter</span>
-        </a></li><li>
-        <a class="is-flex" href="#👉-Tag-Plugin">
-        <span class="has-mr-6">4</span>
-        <span>👉 Tag Plugin</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#🔵-인용-구문">
-        <span class="has-mr-6">4.1</span>
-        <span>🔵 인용 구문</span>
-        </a></li><li>
-        <a class="is-flex" href="#🔵-코드-삽입">
-        <span class="has-mr-6">4.2</span>
-        <span>🔵 코드 삽입</span>
-        </a></li><li>
-        <a class="is-flex" href="#🔵-YOUTUBE-삽입">
-        <span class="has-mr-6">4.3</span>
-        <span>🔵 YOUTUBE 삽입</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#👉-Asset-Folder">
-        <span class="has-mr-6">5</span>
-        <span>👉 Asset Folder</span>
-        </a></li><li>
-        <a class="is-flex" href="#👉-Reference">
-        <span class="has-mr-6">6</span>
-        <span>👉 Reference</span>
+        <span>Comment out</span>
         </a></li></ul>
         </div>
     </div>
@@ -805,41 +713,17 @@
                 카탈로그
             </h3>
             <ul class="menu-list"><li>
-        <a class="is-flex" href="#👉-Intro">
+        <a class="is-flex" href="#Curly-bracket">
         <span class="has-mr-6">1</span>
-        <span>👉 Intro</span>
+        <span>Curly bracket({})</span>
         </a></li><li>
-        <a class="is-flex" href="#👉-Scaffolds">
+        <a class="is-flex" href="#Semicolon">
         <span class="has-mr-6">2</span>
-        <span>👉 Scaffolds</span>
+        <span>Semicolon</span>
         </a></li><li>
-        <a class="is-flex" href="#👉-Front-matter">
+        <a class="is-flex" href="#Comment-out">
         <span class="has-mr-6">3</span>
-        <span>👉 Front-matter</span>
-        </a></li><li>
-        <a class="is-flex" href="#👉-Tag-Plugin">
-        <span class="has-mr-6">4</span>
-        <span>👉 Tag Plugin</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#🔵-인용-구문">
-        <span class="has-mr-6">4.1</span>
-        <span>🔵 인용 구문</span>
-        </a></li><li>
-        <a class="is-flex" href="#🔵-코드-삽입">
-        <span class="has-mr-6">4.2</span>
-        <span>🔵 코드 삽입</span>
-        </a></li><li>
-        <a class="is-flex" href="#🔵-YOUTUBE-삽입">
-        <span class="has-mr-6">4.3</span>
-        <span>🔵 YOUTUBE 삽입</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#👉-Asset-Folder">
-        <span class="has-mr-6">5</span>
-        <span>👉 Asset Folder</span>
-        </a></li><li>
-        <a class="is-flex" href="#👉-Reference">
-        <span class="has-mr-6">6</span>
-        <span>👉 Reference</span>
+        <span>Comment out</span>
         </a></li></ul>
         </div>
     </div>
@@ -1099,7 +983,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="Hexo의 여러가지 사용법" height="28">
+                    <img src="/images/logo.png" alt="Go. Basic Syntax" height="28">
                 
                 </a>
                 <p class="is-size-7">

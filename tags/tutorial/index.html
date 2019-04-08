@@ -2,24 +2,23 @@
 <html lang="ko">
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>Hexo의 여러가지 사용법 - Wook&#39;s Programming Blog</title>
+<title>태그: tutorial - Wook&#39;s Programming Blog</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="👉 Intro Hexo에 대해서 알아봤으니 이제 사용법에 대해 천천히 알아봅시다.  Scaffolds Front-matter Tag Plugin Asset Folder">
-<meta name="keywords" content="hexo">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Hexo의 여러가지 사용법">
-<meta property="og:url" content="http://nawook96.github.io/2019/04/06/01-Hexo/index.html">
+    <meta name="description" content="It&apos;s IT Blog">
+<meta name="keywords" content="Programming">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Wook&#39;s Programming Blog">
+<meta property="og:url" content="http://nawook96.github.io/tags/tutorial/index.html">
 <meta property="og:site_name" content="Wook&#39;s Programming Blog">
-<meta property="og:description" content="👉 Intro Hexo에 대해서 알아봤으니 이제 사용법에 대해 천천히 알아봅시다.  Scaffolds Front-matter Tag Plugin Asset Folder">
+<meta property="og:description" content="It&apos;s IT Blog">
 <meta property="og:locale" content="ko">
 <meta property="og:image" content="http://nawook96.github.io/images/og_image.png">
-<meta property="og:updated_time" content="2019-04-06T14:06:02.832Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo의 여러가지 사용법">
-<meta name="twitter:description" content="👉 Intro Hexo에 대해서 알아봤으니 이제 사용법에 대해 천천히 알아봅시다.  Scaffolds Front-matter Tag Plugin Asset Folder">
+<meta name="twitter:title" content="Wook&#39;s Programming Blog">
+<meta name="twitter:description" content="It&apos;s IT Blog">
 <meta name="twitter:image" content="http://nawook96.github.io/images/og_image.png">
 
 
@@ -101,7 +100,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="Hexo의 여러가지 사용법" height="28">
+                <img src="/images/logo.png" alt="Wook&#39;s Programming Blog" height="28">
             
             </a>
         </div>
@@ -131,10 +130,6 @@
                     
                 
                 
-                <a class="navbar-item is-hidden-tablet catalogue" title="카탈로그" href="javascript:;">
-                    <i class="fas fa-list-ul"></i>
-                </a>
-                
                 
                 <a class="navbar-item search" title="Search" href="javascript:;">
                     <i class="fas fa-search"></i>
@@ -149,22 +144,33 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main"><div class="card">
+    <div class="card-content">
+        <nav class="breadcrumb" aria-label="breadcrumbs">
+        <ul>
+            <li><a href="/tags">태그</a></li>
+            <li class="is-active"><a href="#" aria-current="page">tutorial</a></li>
+        </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="card">
     
     <div class="card-content article ">
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2019-04-05T16:58:06.000Z">2019-04-06</time>
+                <time class="level-item has-text-grey" datetime="2019-04-08T14:02:21.000Z">2019-04-08</time>
                 
                 <div class="level-item">
-                <a class="has-link-grey -link" href="/categories/Hexo/">Hexo</a>
+                <a class="has-link-grey -link" href="/categories/Go/">Go</a>
                 </div>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    4분 read (About 666 words)
+                    1분 read (About 210 words)
                 </span>
                 
                 
@@ -173,147 +179,234 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                Hexo의 여러가지 사용법
+                <a class="has-link-black-ter" href="/2019/04/08/03-Variable/">Go. Variable</a>
             
         </h1>
         <div class="content">
-            <h1 id="👉-Intro"><a href="#👉-Intro" class="headerlink" title="👉 Intro"></a>👉 Intro</h1><hr>
-<p>Hexo에 대해서 알아봤으니 이제 사용법에 대해 천천히 알아봅시다.</p>
-<ul>
-<li>Scaffolds</li>
-<li>Front-matter</li>
-<li>Tag Plugin</li>
-<li>Asset Folder</li>
-</ul>
-<a id="more"></a>
-<h1 id="👉-Scaffolds"><a href="#👉-Scaffolds" class="headerlink" title="👉 Scaffolds"></a>👉 Scaffolds</h1><hr>
-<ul>
-<li>스캐폴드는 ‘hexo new’를 통해 새로운 파일을 생성할 때 기본적으로 만들어지는 구조를 정의하는 파일 입니다.</li>
-</ul>
-<figure class="highlight plain hljs"><figcaption><span>/scaffolds/post.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: Hexo의 여러가지 사용법</span><br><span class="line">date: 1554483486000</span><br><span class="line">tags:</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-<ul>
-<li><p>기본적으로 이런 구조일 것 입니다. 여기서 tags에 파일 생성시 기본으로 달아줄 태그를 달아줄 수 있습니다.</p>
-</li>
-<li><p>뿐만 아니라 카테고리와 썸네일도 설정 할 수 있습니다.</p>
-</li>
-</ul>
-<h1 id="👉-Front-matter"><a href="#👉-Front-matter" class="headerlink" title="👉 Front-matter"></a>👉 Front-matter</h1><ul>
-<li><p>Front-matter는 새로운 파일 생성 시 가장 위에있는 블락입니다.</p>
-<figure class="highlight plain hljs"><figcaption><span>/source/_post/01-Hexo.md</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 01_Hexo의 여러가지 사용법</span><br><span class="line">date: 2019-04-06 01:58:06</span><br><span class="line">tags:</span><br><span class="line">    - hexo</span><br><span class="line">categories:</span><br><span class="line">    - Hexo</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>스캐폴드를 통해서 자주 사용하는 것들을 정의해두면 편리합니다.</p>
-</li>
-<li><p><strong>layout</strong> : 레이아웃</p>
-</li>
-<li><strong>title</strong> : 제목</li>
-<li><strong>date</strong> : 배포 날짜</li>
-<li><strong>updated</strong> : 수정 날짜</li>
-<li><strong>comments</strong> : 댓글 기능 여부(true/false)</li>
-<li><strong>tags</strong> : 태그</li>
-<li><strong>categories</strong> : 카테고리</li>
-<li><strong>permalink</strong> : 포스트의 URL</li>
-<li><strong>thumbnail</strong> : 썸네일</li>
-</ul>
-<h1 id="👉-Tag-Plugin"><a href="#👉-Tag-Plugin" class="headerlink" title="👉 Tag Plugin"></a>👉 Tag Plugin</h1><hr>
-<ul>
-<li><p>태그 플러그인은 Hexo에서 자체적으로 지원하는 문법으로, 마크다운 외에 포스팅을 하기 위한 문법입니다.</p>
-</li>
-<li><p>제가 자주 사용하는 것만 정리 해보자면,</p>
-</li>
-</ul>
-<h2 id="🔵-인용-구문"><a href="#🔵-인용-구문" class="headerlink" title="🔵 인용 구문"></a>🔵 인용 구문</h2><hr>
-<ul>
-<li>MD에서 제공하는 인용 구문보다 더 많은 정보를 추가 할 수 있습니다.</li>
-</ul>
-<p><strong>How to use</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote [author[, source]] [link] [source_link_title] %&#125;</span><br><span class="line">content</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>Example</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% blockquote 신동욱, https://github.com/nawook96 %&#125;</span><br><span class="line">배고프다</span><br><span class="line">&#123;% endblockquote %&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>Result</strong><br><blockquote><p>배고프다</p>
-<footer><strong>신동욱,</strong><cite><a href="https://github.com/nawook96" target="_blank" rel="noopener">github.com/nawook96</a></cite></footer></blockquote></p>
-<h2 id="🔵-코드-삽입"><a href="#🔵-코드-삽입" class="headerlink" title="🔵 코드 삽입"></a>🔵 코드 삽입</h2><hr>
-<ul>
-<li>lang은 <a href="https://highlightjs.org" target="_blank" rel="noopener">https://highlightjs.org</a> 에서 지원하는 언어만 나옵니다.(highlight), 파일명 명시도 가능합니다.</li>
-</ul>
-<p><strong>How to use</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock [title] [lang:language] [url] [link text] %&#125;</span><br><span class="line">code snippet</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>Example</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% codeblock lang:objc hi.h%&#125;</span><br><span class="line">[rectangle setX: 10 y: 10 width: 20 height: 20];</span><br><span class="line">&#123;% endcodeblock %&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>Result</strong><br><figure class="highlight objc hljs"><figcaption><span>hi.h</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[rectangle setX: <span class="hljs-number">10</span> y: <span class="hljs-number">10</span> width: <span class="hljs-number">20</span> height: <span class="hljs-number">20</span>];</span><br></pre></td></tr></table></figure></p>
-<h2 id="🔵-YOUTUBE-삽입"><a href="#🔵-YOUTUBE-삽입" class="headerlink" title="🔵 YOUTUBE 삽입"></a>🔵 YOUTUBE 삽입</h2><hr>
-<p><strong>How to use</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube video_id %&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>Example</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;% youtube Z0ti3pBKmes %&#125;</span><br></pre></td></tr></table></figure></p>
-<p><strong>Result</strong><br><div class="video-container"><iframe src="//www.youtube.com/embed/Z0ti3pBKmes" frameborder="0" allowfullscreen></iframe></div></p>
-<h1 id="👉-Asset-Folder"><a href="#👉-Asset-Folder" class="headerlink" title="👉 Asset Folder"></a>👉 Asset Folder</h1><hr>
-<ul>
-<li><p>Asset Folder는 각 포스트에서 사용하는 여러가지 리소스를 저장하는 폴더입니다.</p>
-</li>
-<li><p>_config.yml 에서 다음과 같이 수정하여 설정 하면, 새로운 포스팅을 할 때마다 자동으로 폴더가 생성 됩니다.</p>
-</li>
-</ul>
-<figure class="highlight plain hljs"><figcaption><span>_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">post_asset_folder: true</span><br></pre></td></tr></table></figure>
-<ul>
-<li>이제 생성된 파일에 있는 여러가지 리소스를 경로를 설정해 주지 않아도 다음과 같이 Tag Plugin을 통해 사용할 수 있습니다.</li>
-</ul>
-<p><strong>How to use</strong><br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#123;% asset_path &lt;file-name&gt; %&#125;</span><br><span class="line">&#123;% asset_img &lt;file-name&gt; [title] %&#125;</span><br><span class="line">&#123;% asset_link &lt;url-name&gt; [title] %&#125;</span><br></pre></td></tr></table></figure></p>
-<h1 id="👉-Reference"><a href="#👉-Reference" class="headerlink" title="👉 Reference"></a>👉 Reference</h1><hr>
-<ul>
-<li>여기에서 많이 참고했습니다.<br>(<a href="https://futurecreator.github.io/2016/06/21/hexo-basic-usage/" target="_blank" rel="noopener">https://futurecreator.github.io/2016/06/21/hexo-basic-usage/</a>)</li>
-</ul>
-
+            <h1 id="Declaration"><a href="#Declaration" class="headerlink" title="Declaration"></a>Declaration</h1><hr>
+<p>There are two ways to declare a variable in the <strong>Golang</strong>: using the <code>var</code> keyword and omitting the template.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var i int</span><br><span class="line">var s string</span><br><span class="line"></span><br><span class="line">var age1 int = 10</span><br><span class="line">var name1 string = &quot;Shin&quot;</span><br></pre></td></tr></table></figure>
+<p>If you omit data-type, the variable is determined by data-type of value that you enter. However, if you omit the data-type, you must define the initial value.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var age2 = 20</span><br><span class="line">var name2 = &quot;Kim&quot;</span><br><span class="line">var address // compiled error</span><br></pre></td></tr></table></figure>
+<h1 id="Short-declaration"><a href="#Short-declaration" class="headerlink" title="Short declaration"></a>Short declaration</h1><hr>
+<p><code>:=</code> allows you to simply declare and initialize variables without using <code>var</code> and <code>type</code> keywords.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">age3 := 30</span><br><span class="line">name3 := &quot;Park&quot;</span><br></pre></td></tr></table></figure>
+<h1 id="Multple-declaration"><a href="#Multple-declaration" class="headerlink" title="Multple declaration"></a>Multple declaration</h1><hr>
+<p>you can declare multiple variables separated by <code>,</code>(comma). Then, values are subsituted in the order in which variables are declared and must be equal to number of variables.<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">var x1, y1 int = 30, 50       // x = 30, y = 50</span><br><span class="line">var age4, name4 = 40, &quot;Choi&quot; // age = 10, name = &quot;Choi&quot;</span><br><span class="line">a, b, c, d := 1, 3.4, &quot;Hello, world!&quot;, false // a = 1, b = 3.4, c = &quot;Hello, world!&quot;, d = false.</span><br></pre></td></tr></table></figure></p>
+<p>You can enter values for multiple variables even after a variable is declared. In <strong>Golang</strong>, this feature is called <code>Parallel assignment</code>.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var x3, y3 int</span><br><span class="line">var age6 int</span><br><span class="line"></span><br><span class="line">x4, y4, age = 10, 20, 5  // x = 10, y = 20, age = 5: Parallel assignment</span><br></pre></td></tr></table></figure>
+<p><code>var</code> keyword and <code>()</code> allow you to declare and initialize multiple variables.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">var (</span><br><span class="line">	x2, y2      int = 30, 50      // x and y : int.</span><br><span class="line">	age5, name5     = 10, &quot;Maria&quot; // age : int, name : string</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
         </div>
         
-        <div class="level is-size-7 is-uppercase">
-            <div class="level-start">
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-08T14:01:02.000Z">2019-04-08</time>
+                
                 <div class="level-item">
-                    <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/hexo/">hexo</a>
+                <a class="has-link-grey -link" href="/categories/Go/">Go</a>
                 </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    몇 초 read (About 102 words)
+                </span>
+                
+                
             </div>
         </div>
         
-        
-        
-    </div>
-</div>
-
-
-
-
-
-<div class="card card-transparent">
-    <div class="level post-navigation is-flex-wrap is-mobile">
-        
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2019/04/08/00-init/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">Go. Go tutorial</span>
-            </a>
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/08/02-Basic-Syntax/">Go. Basic Syntax</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="Curly-bracket"><a href="#Curly-bracket" class="headerlink" title="Curly bracket({})"></a>Curly bracket({})</h1><hr>
+<p>You must start a square bracket on the same line when you start a function, condition statement, or loop statement, such as:</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">func main() &#123;</span><br><span class="line">	i := 10</span><br><span class="line">	if i &gt; 5 &#123;</span><br><span class="line">		fmt.Println(&quot;above 5&quot;)</span><br><span class="line">	&#125;</span><br><span class="line">	for i := 0; i &lt; 5; i++ &#123;</span><br><span class="line">		fmt.Println(i)</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="Semicolon"><a href="#Semicolon" class="headerlink" title="Semicolon"></a>Semicolon</h1><hr>
+<p>Unlike C,C++, you usually omit semicolon at the end of the phrase in <strong>Golang</strong>.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fmt.Println(&quot;Hello, world!&quot;)</span><br></pre></td></tr></table></figure>
+<p>If you want to use multiple phrases per line, you can separate them with semicolons.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fmt.Println(&quot;Hello,&quot;);fmt.Println(&quot;world!&quot;)</span><br></pre></td></tr></table></figure>
+<h1 id="Comment-out"><a href="#Comment-out" class="headerlink" title="Comment out"></a>Comment out</h1><hr>
+<p>The Comment out has two type, one line and range.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">// fmt.Println(&quot;Hello, world!&quot;)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">/*</span><br><span class="line">fmt.Println(&quot;Hello,&quot;)</span><br><span class="line">fmt.Println(&quot;world!&quot;)</span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
         </div>
         
         
-        <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/04/05/00-Hexo/">
-                <span class="level-item">Hexo 설치 및 사용법</span>
-                <i class="level-item fas fa-chevron-right"></i>
-            </a>
-        </div>
         
     </div>
 </div>
 
 
 
-<div class="card">
-    <div class="card-content">
-        <h3 class="title is-5 has-text-weight-normal">댓글</h3>
-        <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/ko/sdk.js#xfbml=1&version=v2.8";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<div class="fb-comments" data-width="100%" data-href="http://nawook96.github.io/2019/04/06/01-Hexo/" data-num-posts="5"></div>
 
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-08T13:59:52.000Z">2019-04-08</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Go/">Go</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    1분 read (About 117 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/08/01-Build/">Go. How to build</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="How-to-build"><a href="#How-to-build" class="headerlink" title="How to build"></a>How to build</h1><p>Make <strong>hello.go</strong> file like /GOPATH/src/hello.go</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br><span class="line"></span><br><span class="line">import &quot;fmt&quot;</span><br><span class="line"></span><br><span class="line">func main() &#123;</span><br><span class="line">    fmt.Println(&quot;Hello, world!&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>Execute the following command in terminal<br><figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">go build hello.go</span><br><span class="line">go run hello.go</span><br></pre></td></tr></table></figure></p>
+<p><strong>Golang</strong> consists of all parts of the package. Therefore, package setting is placed on the top of source codes. Also, the main package is the first to run.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">package main</span><br></pre></td></tr></table></figure>
+<p><strong>import</strong> is a keyword that uses packages. We use <code>fmt</code> package to print strings.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">import &quot;fmt&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>Like</strong> C, C++, Java, and C#, start with the main function. And using the Println function of the fmt package, Outputs a string “Hello, world!”.</p>
+<figure class="highlight plain hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">func main() &#123;</span><br><span class="line">    fmt.Println(&quot;Hello, world!&quot;)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        </div>
+        
+        
+        
     </div>
 </div>
+
+
+
+
+
+
+
+
+    <div class="card">
+    
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2019-04-08T13:57:44.000Z">2019-04-08</time>
+                
+                <div class="level-item">
+                <a class="has-link-grey -link" href="/categories/Go/">Go</a>
+                </div>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2분 read (About 246 words)
+                </span>
+                
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2019/04/08/00-init/">Go. Go tutorial</a>
+            
+        </h1>
+        <div class="content">
+            <h1 id="Go"><a href="#Go" class="headerlink" title="Go"></a>Go</h1><hr>
+<p></p><p align="center"><img width="300" src="https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/07/go.png"></p>
+<p><code>go-tutorial</code> provides tutorial how to use <strong>Golang</strong>. In the tutorial, There are basic syntax of <strong>Golang</strong>.</p>
+<p>All code is <a href="https://github.com/nawook96/go-tutorial" target="_blank" rel="noopener">here</a></p>
+<h1 id="Why-use-go"><a href="#Why-use-go" class="headerlink" title="Why use go?"></a>Why use go?</h1><hr>
+<p><strong>Golang</strong> is designed at <strong>google</strong> by Robert Griesemer, Rob Pike, and Ken Thompsom.</p>
+<p><strong>Golang</strong> is programming language has been developed for fast performance, reliability, convenience, and easy.</p>
+<p><strong>Golang</strong>‘s feature :</p>
+<ul>
+<li>Statically type</li>
+<li>Compiled language</li>
+<li>Garbage collection</li>
+<li>Concurrency</li>
+<li>Support multi-core environment</li>
+<li>Fast compile</li>
+</ul>
+<h1 id="Table-of-Contents"><a href="#Table-of-Contents" class="headerlink" title="Table of Contents"></a>Table of Contents</h1><hr>
+<p>will be update..</p>
+<h3 id="1-basics"><a href="#1-basics" class="headerlink" title="1. basics"></a>1. basics</h3><ul>
+<li><a href="https://github.com/nawook96/go-tutorial/tree/master/src/1_basics/1_Build" target="_blank" rel="noopener">How to build</a></li>
+<li><a href="https://github.com/nawook96/go-tutorial/tree/master/src/1_basics/2_Basic_Syntax" target="_blank" rel="noopener">Basic Syntax</a></li>
+<li><a href="https://github.com/nawook96/go-tutorial/tree/master/src/1_basics/3_Variable" target="_blank" rel="noopener">Variable</a></li>
+</ul>
+<h3 id="2-advanced"><a href="#2-advanced" class="headerlink" title="2. advanced"></a>2. advanced</h3><ul>
+<li><h1 id="Getting-Started"><a href="#Getting-Started" class="headerlink" title="Getting Started"></a>Getting Started</h1></li>
+</ul>
+<hr>
+<h2 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ wget https://storage.googleapis.com/golang/go&lt;version&gt;.linux-&lt;architecture&gt;.tar.gz</span><br><span class="line">$ tar vxzf go&lt;version&gt;.linux-&lt;architecture&gt;.tar.gz</span><br><span class="line">$ sudo mv go /usr/<span class="hljs-built_in">local</span>/</span><br></pre></td></tr></table></figure>
+<p>And set environment variable<br><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="hljs-built_in">echo</span> <span class="hljs-string">"export PATH=<span class="hljs-variable">$PATH</span>:/usr/local/go/bin"</span> &gt;&gt; .bashrc</span><br><span class="line">$ sourch .bashrc</span><br></pre></td></tr></table></figure></p>
+<h2 id="Ubuntu"><a href="#Ubuntu" class="headerlink" title="Ubuntu"></a>Ubuntu</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get update</span><br><span class="line">$ sudo apt-get install golang</span><br></pre></td></tr></table></figure>
+<h2 id="CentOS"><a href="#CentOS" class="headerlink" title="CentOS"></a>CentOS</h2><figure class="highlight bash hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo yum install golang</span><br></pre></td></tr></table></figure>
+<h2 id="Mac-OS-X"><a href="#Mac-OS-X" class="headerlink" title="Mac OS X"></a>Mac OS X</h2><p>You can download pkg file in <a href="http://golang.org/dl" target="_blank" rel="noopener">here</a>.</p>
+<h2 id="Windows"><a href="#Windows" class="headerlink" title="Windows"></a>Windows</h2><p>You can download install file in <a href="http://golang.org/dl" target="_blank" rel="noopener">here</a>.</p>
+<p>And you set environment variable. (ex: PATH=C:\Go\bin, GOPATH=C:\myGo)<br>And make pkg,bin,src folder.</p>
+<h1 id="Version"><a href="#Version" class="headerlink" title="Version"></a>Version</h1><hr>
+<ul>
+<li>Go 1.12.1</li>
+</ul>
+<h1 id="Author"><a href="#Author" class="headerlink" title="Author"></a>Author</h1><hr>
+<ul>
+<li>Dongwook, Shin <a href="https://github.com/nawook96" target="_blank" rel="noopener">@nawook96</a></li>
+<li>Homepage : <a href="https://nawook96.github.io">https://nawook96.github.io</a></li>
+</ul>
+<h1 id="Reference"><a href="#Reference" class="headerlink" title="Reference"></a>Reference</h1><hr>
+<p><a href="http://pyrasis.com/go.html" target="_blank" rel="noopener">http://pyrasis.com/go.html</a></p>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+
+
+
 </div>
                 
 
@@ -497,53 +590,6 @@
         <div class="column-right-shadow is-hidden-widescreen is-sticky">
         
             
-<div class="card widget" id="toc">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                카탈로그
-            </h3>
-            <ul class="menu-list"><li>
-        <a class="is-flex" href="#👉-Intro">
-        <span class="has-mr-6">1</span>
-        <span>👉 Intro</span>
-        </a></li><li>
-        <a class="is-flex" href="#👉-Scaffolds">
-        <span class="has-mr-6">2</span>
-        <span>👉 Scaffolds</span>
-        </a></li><li>
-        <a class="is-flex" href="#👉-Front-matter">
-        <span class="has-mr-6">3</span>
-        <span>👉 Front-matter</span>
-        </a></li><li>
-        <a class="is-flex" href="#👉-Tag-Plugin">
-        <span class="has-mr-6">4</span>
-        <span>👉 Tag Plugin</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#🔵-인용-구문">
-        <span class="has-mr-6">4.1</span>
-        <span>🔵 인용 구문</span>
-        </a></li><li>
-        <a class="is-flex" href="#🔵-코드-삽입">
-        <span class="has-mr-6">4.2</span>
-        <span>🔵 코드 삽입</span>
-        </a></li><li>
-        <a class="is-flex" href="#🔵-YOUTUBE-삽입">
-        <span class="has-mr-6">4.3</span>
-        <span>🔵 YOUTUBE 삽입</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#👉-Asset-Folder">
-        <span class="has-mr-6">5</span>
-        <span>👉 Asset Folder</span>
-        </a></li><li>
-        <a class="is-flex" href="#👉-Reference">
-        <span class="has-mr-6">6</span>
-        <span>👉 Reference</span>
-        </a></li></ul>
-        </div>
-    </div>
-</div>
-
         
             
 <div class="card widget">
@@ -798,53 +844,6 @@
 <div class="column is-4-tablet is-4-desktop is-3-widescreen is-hidden-touch is-hidden-desktop-only has-order-3 column-right is-sticky">
     
         
-<div class="card widget" id="toc">
-    <div class="card-content">
-        <div class="menu">
-            <h3 class="menu-label">
-                카탈로그
-            </h3>
-            <ul class="menu-list"><li>
-        <a class="is-flex" href="#👉-Intro">
-        <span class="has-mr-6">1</span>
-        <span>👉 Intro</span>
-        </a></li><li>
-        <a class="is-flex" href="#👉-Scaffolds">
-        <span class="has-mr-6">2</span>
-        <span>👉 Scaffolds</span>
-        </a></li><li>
-        <a class="is-flex" href="#👉-Front-matter">
-        <span class="has-mr-6">3</span>
-        <span>👉 Front-matter</span>
-        </a></li><li>
-        <a class="is-flex" href="#👉-Tag-Plugin">
-        <span class="has-mr-6">4</span>
-        <span>👉 Tag Plugin</span>
-        </a><ul class="menu-list"><li>
-        <a class="is-flex" href="#🔵-인용-구문">
-        <span class="has-mr-6">4.1</span>
-        <span>🔵 인용 구문</span>
-        </a></li><li>
-        <a class="is-flex" href="#🔵-코드-삽입">
-        <span class="has-mr-6">4.2</span>
-        <span>🔵 코드 삽입</span>
-        </a></li><li>
-        <a class="is-flex" href="#🔵-YOUTUBE-삽입">
-        <span class="has-mr-6">4.3</span>
-        <span>🔵 YOUTUBE 삽입</span>
-        </a></li></ul></li><li>
-        <a class="is-flex" href="#👉-Asset-Folder">
-        <span class="has-mr-6">5</span>
-        <span>👉 Asset Folder</span>
-        </a></li><li>
-        <a class="is-flex" href="#👉-Reference">
-        <span class="has-mr-6">6</span>
-        <span>👉 Reference</span>
-        </a></li></ul>
-        </div>
-    </div>
-</div>
-
     
         
 <div class="card widget">
@@ -1099,7 +1098,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="Hexo의 여러가지 사용법" height="28">
+                    <img src="/images/logo.png" alt="Wook&#39;s Programming Blog" height="28">
                 
                 </a>
                 <p class="is-size-7">
